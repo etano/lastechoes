@@ -13,9 +13,9 @@ To regenerate the list:
 
 To get running:
 
-    python last_echoes.py
+    python lastechoes.py
 
 For crontab (every day):
 
-    0 17 * * * /usr/bin/python /path/to/last_echoes/scrape.py >> /path/to/last_echoes/scrape.log 2>&1
-    0 18 * * * /usr/bin/python /path/to/last_echoes/last_echoes.py >> /path/to/last_echoes/last_echoes.log 2>&1
+    0 17 * * * /usr/bin/python /path/to/lastechoes/scrape.py >> /path/to/lastechoes/scrape.log 2>&1
+    0 18 * * * /usr/bin/python /path/to/lastechoes/lastechoes.py >> /path/to/lastechoes/lastechoes.log 2>&1
