@@ -1,8 +1,12 @@
 import datetime as dt
 import logging
+import sys
 
 import pandas as pd
 import tweepy
+
+
+log = logging.getLogger(__name__)
 
 
 def breakup_status(status, max_size=140):
@@ -42,7 +46,7 @@ def main():
             x = api.update_status(statuses[0])
             for s in statuses[1:]:
                 x = api.update_status(s, in_reply_to_status_id=x.id)
-    except Exception as e:
+    except Exception:
         log.exception("failed to execute")
 
 
