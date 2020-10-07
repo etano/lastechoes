@@ -25,4 +25,4 @@ jobs:
         python scrape.py
     - name: Tweet
       run: |
-        python lastechoes.py ${{ secrets.TWITTER_CONSUMER_KEY }} ${{ secrets.TWITTER_CONSUMER_SECRET }} ${{ secrets.TWITTER_ACCESS_KEY }} ${{ secrets.TWITTER_ACCESS_SECRET }}
+        python app.py ${{ secrets.TWITTER_CONSUMER_KEY }} ${{ secrets.TWITTER_CONSUMER_SECRET }} ${{ secrets.TWITTER_ACCESS_KEY }} ${{ secrets.TWITTER_ACCESS_SECRET }}
